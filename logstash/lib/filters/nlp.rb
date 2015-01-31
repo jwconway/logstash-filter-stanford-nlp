@@ -1,7 +1,7 @@
 require "logstash/filters/base"
 require "logstash/namespace"
 require "logstash/filters/nlp/stanford-nlp-wrapper.jar"
-require "logstash/filters/nlp/stanford-corenlp-3.5.0-models.jar"
+require "logstash/filters/nlp/stanford-corenlp-models-current.jar"
 require "logstash/filters/nlp/stanford-corenlp-3.5.0.jar"
 
 class LogStash::Filters::NLP < LogStash::Filters::Base
