@@ -38,7 +38,7 @@ class LogStash::Filters::NLP < LogStash::Filters::Base
       event["message"] = event["message"] + @result.sentiment.to_s
       event["nlp.sentiment"] = @result.sentiment
       event["nlp.tokens"] = @result.tokens
-      event["nlp.sentences"] = @result.sentences
+      event["nlp.sentences"] = @result.sentences.to_json
     end
     # filter_matched should go in the last line of our successful code
     filter_matched(event)
