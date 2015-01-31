@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9eab8310-a3b1-4cc0-98f8-e5e27f0832c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logstash/lib/filters/nlp.rb" afterPath="$PROJECT_DIR$/logstash/lib/filters/nlp.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stanford-nlp-wrapper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +47,8 @@
       <file leaf-file-name="nlp.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logstash/lib/filters/nlp.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84821427" vertical-offset="0" max-vertical-offset="750">
-              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.89285713" vertical-offset="0" max-vertical-offset="780">
+              <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -766,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logstash/lib/filters/nlp.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84821427" vertical-offset="0" max-vertical-offset="735">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.89285713" vertical-offset="0" max-vertical-offset="780">
+          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
           <folding />
         </state>
       </provider>
