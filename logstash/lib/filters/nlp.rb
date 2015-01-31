@@ -3,6 +3,7 @@ require "logstash/namespace"
 require "logstash/filters/nlp/stanford-nlp-wrapper.jar"
 require "logstash/filters/nlp/stanford-corenlp-models-current.jar"
 require "logstash/filters/nlp/stanford-corenlp-3.5.0.jar"
+require "json"
 
 class LogStash::Filters::NLP < LogStash::Filters::Base
 
@@ -38,7 +39,7 @@ class LogStash::Filters::NLP < LogStash::Filters::Base
       event["message"] = event["message"] + @result.sentiment.to_s
       event["nlp.sentiment"] = @result.sentiment
       event["nlp.tokens"] = @result.tokens
-      event["nlp.sentences"] = @result.sentences.to_json
+      event["nlp.sentences"] = @result.sentences
     end
     # filter_matched should go in the last line of our successful code
     filter_matched(event)

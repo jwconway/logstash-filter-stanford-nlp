@@ -1,5 +1,6 @@
 package uk.co.jaywayco;
 
+import com.google.gson.Gson;
 import com.sun.javaws.exceptions.InvalidArgumentException;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
@@ -30,6 +31,7 @@ public class Parser {
     Properties tokenizerProps;
     StanfordCoreNLP tokenizer;
     StanfordCoreNLP pipeline;
+    Gson gson;
 
     public Parser() {
         pipelineProps = new Properties();
@@ -42,6 +44,7 @@ public class Parser {
 
         tokenizer = (tokenizerProps == null) ? null : new StanfordCoreNLP(tokenizerProps);
         pipeline = new StanfordCoreNLP(pipelineProps);
+        gson = new Gson();
     }
 
     private void setSentimentLabels(Tree tree) {
@@ -100,6 +103,8 @@ public class Parser {
 
         result.tokens = labelsToStrings(annotation.get(CoreAnnotations.TokensAnnotation.class));
 
+        List<Sentence> sentences = new ArrayList<uk.co.jaywayco.Parser.Sentence>();
+
         List<CoreMap> list = annotation.get(CoreAnnotations.SentencesAnnotation.class);
         Iterator<CoreMap> it = list.iterator();
 
@@ -122,11 +127,13 @@ public class Parser {
             sentence.sentiment = GetScore(sentimentStr);
             acc += sentence.sentiment;
 
-            result.addSentence(sentence);
+            sentences.add(sentence);
         }
 
         float avgSentiment = list.size() > 0 ? acc / list.size() : 2.0f;
         result.sentiment = Float.parseFloat(NUMBER_FORMAT.format(avgSentiment));
+
+        result.sentences = gson.toJson(sentences);
 
         return result;
     }
@@ -137,15 +144,11 @@ public class Parser {
     static final NumberFormat NUMBER_FORMAT = new DecimalFormat("0.00");
 
     class SentimentResult{
-        public List<Sentence> sentences = new ArrayList<uk.co.jaywayco.Parser.Sentence>();
+        public String sentences;
 
         public List<String> tokens;
 
         public float sentiment;
-
-        public void addSentence(Sentence sentence) {
-            sentences.add(sentence);
-        }
     }
 
     class Sentence {
