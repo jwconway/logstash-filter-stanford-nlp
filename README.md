@@ -1,3 +1,4 @@
+```
 cd /path/to/logstash
 cd /lib/logstash/filters
 mkdir nlp
@@ -7,7 +8,7 @@ wget http://nlp.stanford.edu/software/stanford-corenlp-models-current.jar
 wget my.jar
 cd ..
 wget nlp.rb
-
+```
 ```
 example config
 ```
