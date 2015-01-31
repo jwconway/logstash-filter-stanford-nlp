@@ -35,8 +35,8 @@ class LogStash::Filters::NLP < LogStash::Filters::Base
       # Replace the event message with our message as configured in the
       # config file.
       @result = @parser.processLine(event["message"])
-      event["message"] = event["message"] + @result.to_json
-      event["sentiment"] = @result.to_json
+      event["message"] = event["message"] + @result.sentiment
+      event["sentiment"] = @result.sentiment
     end
     # filter_matched should go in the last line of our successful code
     filter_matched(event)
