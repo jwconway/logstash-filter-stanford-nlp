@@ -28,6 +28,7 @@ wget https://github.com/jwconway/logstash-stanford-nlp/raw/master/lib/stanford_n
 cd ..
 wget https://raw.githubusercontent.com/jwconway/logstash-stanford-nlp/master/logstash/lib/filters/nlp.rb
 ```
+## Usage
 
 An example configuration. (Very limited at present)
 ```
@@ -35,12 +36,32 @@ input {
     stdin {}
 }
 filter {
-    nlp {}
+    nlp {
+        source => "message"
+    }
 }
 output {
     stdout {}
 }
 ```
+
+This will add 3 fields to your log:
+
+###nlp.sentiment
+This is the average sentiment of the entire phrase
+
+###nlp.tokens
+This is the phrase broken down into its token (mighty useful in elasticsearch)
+
+###nlp.sentences
+This is an array of sentences that were extracted from the phrase. For each sentence you will get:
+ - sentiment: The sentiment of the sentence
+ - tokens: The tokens in the sentence
+ - sentimentTree: The sentence presented as a sentiment tree, an example:
+ ```
+ [{"tokens":["gammon","for","tea","and","very","thirsty","-RSB-"],"sentimentTree":"(1 (2 (2 (2 gammon) (2 (2 for) (2 tea))) (2 and)) (2 (2 very) (2 (2 thirsty) (2 -RSB-))))","sentiment":1}]
+ ```
+ 
 ## The Stanford Natural Language Processing Group
 Thanks to [The Stanford Natural Language Processing Group](http://nlp.stanford.edu/software/corenlp.shtml)
 
