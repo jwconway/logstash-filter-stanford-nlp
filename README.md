@@ -21,12 +21,12 @@ mkdir nlp
 cd mkdir
 wget http://central.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.5.0/stanford-corenlp-3.5.0.jar
 wget http://nlp.stanford.edu/software/stanford-corenlp-models-current.jar
-wget https://github.com/jwconway/logstash-stanford-nlp/raw/master/lib/stanford_nlp_wrapper_jar/stanford-nlp-wrapper.jar
+wget https://github.com/jwconway/logstash-filter-stanford-nlp/raw/master/lib/stanford_nlp_wrapper_jar/stanford-nlp-wrapper.jar
 ```
 ```
 #download the filter into the filter folder
 cd ..
-wget https://raw.githubusercontent.com/jwconway/logstash-stanford-nlp/master/logstash/lib/filters/nlp.rb
+wget https://raw.githubusercontent.com/jwconway/logstash-filter-stanford-nlp/master/logstash/lib/filters/nlp.rb
 ```
 ## Usage
 
