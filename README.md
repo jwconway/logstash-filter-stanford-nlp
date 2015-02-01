@@ -1,6 +1,6 @@
 #Intro
 
-This is an attempt to plugin the Stanford NLP library into logstash and make its features available via a logstash filter. It is in very alpha condition at the minute but is useable.
+This is an attempt to plugin the [Stanford NLP library](http://nlp.stanford.edu/software/corenlp.shtml) into logstash and make its features available via a logstash filter. It is in very alpha condition at the minute but is useable.
 
 The aim is for any field in any set of logs that are piped through logstash to be able to be parsed by the Stanford NLP. It is my aim for this filter to add fields that represent the following:
 - All tokens
