@@ -65,4 +65,6 @@ This is an array of sentences that were extracted from the phrase. For each sent
 ## The Stanford Natural Language Processing Group
 Thanks to [The Stanford Natural Language Processing Group](http://nlp.stanford.edu/software/corenlp.shtml)
 
+[Stanford NLP Github Page](https://github.com/stanfordnlp/CoreNLP)
+
 For more information on the Stanford NLP Core Toolkit set http://nlp.stanford.edu/pubs/StanfordCoreNlp2014.pdf
