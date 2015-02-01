@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eab8310-a3b1-4cc0-98f8-e5e27f0832c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/stanford_nlp_wrapper_jar/stanford-nlp-wrapper.jar" afterPath="$PROJECT_DIR$/lib/stanford_nlp_wrapper_jar/stanford-nlp-wrapper.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Parser.java" afterPath="$PROJECT_DIR$/src/Parser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logstash/lib/filters/nlp.rb" afterPath="$PROJECT_DIR$/logstash/lib/filters/nlp.rb" />
     </list>
     <ignored path="stanford-nlp-wrapper.iws" />
@@ -46,20 +44,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nlp.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nlp.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logstash/lib/filters/nlp.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="795">
-              <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.79910713" vertical-offset="48" max-vertical-offset="795">
+              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22321428" vertical-offset="0" max-vertical-offset="672">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
               <caret line="10" column="35" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="35" />
               <folding />
             </state>
@@ -86,8 +84,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/logstash/lib/filters/nlp.rb" />
         <option value="$PROJECT_DIR$/src/Parser.java" />
+        <option value="$PROJECT_DIR$/logstash/lib/filters/nlp.rb" />
       </list>
     </option>
   </component>
@@ -747,14 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logstash/lib/filters/nlp.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="795">
-          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1503" max-vertical-offset="2550">
@@ -767,8 +757,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22321428" vertical-offset="0" max-vertical-offset="672">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logstash/lib/filters/nlp.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79910713" vertical-offset="48" max-vertical-offset="795">
+          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
           <folding />
         </state>
       </provider>

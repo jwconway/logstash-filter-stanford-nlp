@@ -35,8 +35,8 @@ class LogStash::Filters::NLP < LogStash::Filters::Base
     if @message
       # Replace the event message with our message as configured in the
       # config file.
-      @result = @parser.processLine(event["message"])
-      event["message"] = event["message"] + @result.sentiment.to_s
+      @result = @parser.processLine(event[@message])
+      #event["message"] = event["message"] + @result.sentiment.to_s
       event["nlp.sentiment"] = @result.sentiment
       event["nlp.tokens"] = @result.tokens
       event["nlp.sentences"] = @result.sentences
