@@ -47,8 +47,8 @@
       <file leaf-file-name="nlp.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/logstash/lib/filters/nlp.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79910713" vertical-offset="48" max-vertical-offset="795">
-              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.57589287" vertical-offset="123" max-vertical-offset="795">
+              <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -765,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logstash/lib/filters/nlp.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79910713" vertical-offset="48" max-vertical-offset="795">
-          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.57589287" vertical-offset="123" max-vertical-offset="795">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
           <folding />
         </state>
       </provider>

@@ -18,8 +18,8 @@ class LogStash::Filters::NLP < LogStash::Filters::Base
   # New plugins should start life at milestone 1.
   milestone 1
 
-  # Replace the message with this value.
-  config :message, :validate => :string
+  # Parse this value.
+  config :source, :validate => :string, :default => "message"
 
   public
   def register
@@ -32,10 +32,10 @@ class LogStash::Filters::NLP < LogStash::Filters::Base
   def filter(event)
     # return nothing unless there's an actual filter event
     return unless filter?(event)
-    if @message
+    if @source
       # Replace the event message with our message as configured in the
       # config file.
-      @result = @parser.processLine(event[@message])
+      @result = @parser.processLine(event[@source])
       #event["message"] = event["message"] + @result.sentiment.to_s
       event["nlp.sentiment"] = @result.sentiment
       event["nlp.tokens"] = @result.tokens
