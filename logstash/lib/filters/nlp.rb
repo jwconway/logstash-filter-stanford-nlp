@@ -7,12 +7,6 @@ require "json"
 
 class LogStash::Filters::NLP < LogStash::Filters::Base
 
-  # Setting the config_name here is required. This is how you
-  # configure this filter from your logstash config.
-  #
-  # filter {
-  #   foo { ... }
-  # }
   config_name "nlp"
 
   # New plugins should start life at milestone 1.
@@ -33,13 +27,15 @@ class LogStash::Filters::NLP < LogStash::Filters::Base
     # return nothing unless there's an actual filter event
     return unless filter?(event)
     if @source
-      # Replace the event message with our message as configured in the
-      # config file.
-      @result = @parser.processLine(event[@source])
-      #event["message"] = event["message"] + @result.sentiment.to_s
-      event["nlp.sentiment"] = @result.sentiment
-      event["nlp.tokens"] = @result.tokens
-      event["nlp.sentences"] = @result.sentences
+      if event[@source].to_s != ''
+        # Replace the event message with our message as configured in the
+        # config file.
+        @result = @parser.processLine(event[@source])
+        #event["message"] = event["message"] + @result.sentiment.to_s
+        event["nlp.sentiment"] = @result.sentiment
+        event["nlp.tokens"] = @result.tokens
+        event["nlp.sentences"] = @result.sentences
+      end
     end
     # filter_matched should go in the last line of our successful code
     filter_matched(event)

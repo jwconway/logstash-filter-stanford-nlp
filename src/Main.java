@@ -10,7 +10,7 @@ public class Main {
         try {
             Gson gson = new Gson();
             uk.co.jaywayco.Parser parser = new uk.co.jaywayco.Parser();
-            System.out.print(gson.toJson(parser.processLine("I am a sentence")));
+            System.out.print(gson.toJson(parser.processLine(null)));
         } catch (Exception ex) {
             System.out.print(ex);
         }
