@@ -11,6 +11,7 @@ The aim is for any field in any set of logs that are piped through logstash to b
 
 ##Intallation
 >This is pretty rudimental at present but should get me started
+
 ```
 #cd to the logstash filters folder
 cd /path/to/logstash/lib/logstash/filters
@@ -18,7 +19,7 @@ cd /path/to/logstash/lib/logstash/filters
 ```
 #create the nlp folder and download the neccesary dependencies (jars)
 mkdir nlp
-cd mkdir
+cd nlp
 wget http://central.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.5.0/stanford-corenlp-3.5.0.jar
 wget http://nlp.stanford.edu/software/stanford-corenlp-models-current.jar
 wget https://github.com/jwconway/logstash-filter-stanford-nlp/raw/master/lib/stanford_nlp_wrapper_jar/stanford-nlp-wrapper.jar
