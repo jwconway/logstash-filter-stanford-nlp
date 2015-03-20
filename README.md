@@ -1,5 +1,7 @@
 #Intro
 
+[![Join the chat at https://gitter.im/jwconway/logstash-filter-stanford-nlp](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jwconway/logstash-filter-stanford-nlp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is an attempt to plugin the [Stanford NLP library](http://nlp.stanford.edu/software/corenlp.shtml) into logstash and make its features available via a logstash filter. It is in very alpha condition at the minute but is useable.
 
 The aim is for any field in any set of logs that are piped through logstash to be able to be parsed by the Stanford NLP. It is my aim for this filter to add fields that represent the following:
